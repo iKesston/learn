@@ -4,6 +4,8 @@ A single-file static landing page for a CapitalEdge Advisors — an investment s
 
 **Live site:** https://ikesston.github.io/learn/
 
+![Screenshot](screenshot.png)
+
 ## Stack
 
 - Pure HTML, CSS, and JavaScript — no build step, no dependencies
