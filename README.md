@@ -1,6 +1,8 @@
 # Investment Strategy Landing Page
 
-A single-file static landing page for an investment strategy consultancy.
+A single-file static landing page for a CapitalEdge Advisors — an investment strategy consultancy.
+
+**Live site:** https://ikesston.github.io/learn/
 
 ## Stack
 
@@ -43,6 +45,10 @@ The enquiry form POSTs to FormSubmit's AJAX endpoint. To change the recipient em
 ```js
 fetch('https://formsubmit.co/ajax/YOUR-EMAIL@example.com', ...)
 ```
+
+## Deployment
+
+Pushing to `main` automatically triggers the GitHub Actions workflow at `.github/workflows/pages.yml`, which deploys the site to GitHub Pages. The live URL is available within ~1–2 minutes of a successful run.
 
 ## Project Structure
 
