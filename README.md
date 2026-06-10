@@ -1,16 +1,17 @@
 # Investment Strategy Landing Page
 
-A single-file static landing page for a CapitalEdge Advisors — an investment strategy consultancy.
+A single-file static landing page for CapitalEdge Advisors — an investment strategy consultancy.
 
 **Live site:** https://ikesston.github.io/learn/
 
-![Screenshot](screenshot.png)
+![Hero screenshot](hero-preview.jpeg)
 
 ## Stack
 
 - Pure HTML, CSS, and JavaScript — no build step, no dependencies
-- Two Google Fonts loaded via CDN (Inter, Playfair Display)
+- Google Fonts via CDN: Cormorant Garamond, Inter
 - Form submissions via [FormSubmit](https://formsubmit.co/) AJAX endpoint
+- Web Speech API for post-submission voice confirmation
 
 ## Running Locally
 
@@ -35,7 +36,7 @@ python -m http.server 8080
 | Process | 4-step timeline |
 | Testimonials | 3 client testimonial cards |
 | Lead Magnet | CTA banner linking to enquiry form |
-| Enquiry Form | Client-validated form with AJAX submission |
+| Enquiry Form | Client-validated form with AJAX submission + voice confirmation |
 | FAQ | Accordion-style FAQ section |
 | Final CTA | Conversion banner |
 | Footer | Contact info, social links, disclaimer |
@@ -47,6 +48,9 @@ The enquiry form POSTs to FormSubmit's AJAX endpoint. To change the recipient em
 ```js
 fetch('https://formsubmit.co/ajax/YOUR-EMAIL@example.com', ...)
 ```
+
+On successful submission the browser plays a voice message via the Web Speech API:
+> "Hurray! Thank you for your submission. We will get back to you in one business day."
 
 ## Deployment
 
